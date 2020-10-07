@@ -28,7 +28,6 @@ int main (){
 	return 0;
 }
 
-
 void acabar(){
 	
 	printf("\n%s%s	+---------------------------------------+%s%s\n",BB,FW,OL,RS);
