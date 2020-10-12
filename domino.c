@@ -165,3 +165,40 @@ void inicio_jogo(Peca **percorre, Peca **corre){
 		conta_maior(&jogador, &oponente);
 	}
 }
+
+void apresenta_jogo(){
+	printf("\nMonte: %d\n",contabiliza(monte));
+	para_baixo(monte, 1);
+	printf("\n\n");
+	printf("Peças do Oponente:\n");
+	para_baixo(oponente, 2);
+	printf("\n\n");
+	printf("Peças da Mesa:\n");
+	apresenta(tabuleiro, 1);
+	printf("\n\n");
+	printf("Peças do Jogador:\n");
+	apresenta(jogador, 2);
+	printf("\n\n");
+}
+
+//percorre lista e apresenta todos os valores que estão na lista
+void apresenta(Peca *percorre, int verifica){
+	
+	Peca *p;
+	p = percorre;
+
+	if(p == NULL)
+		printf("Não há pecas!");
+
+		while(p != NULL){// percorre a lista até chgar no ultimo elemento
+			if(verifica == 1){
+				printf("{%d|%d}",p->E, p->D);
+			}
+			if(verifica == 2){
+				printf("%s{%d|%d}%s ",FB,p->E, p->D,RS);
+			}
+			p = p->prox; //aponta para o proximo No
+		}
+		printf("\n");
+}
+
