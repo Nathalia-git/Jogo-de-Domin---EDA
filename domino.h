@@ -5,6 +5,9 @@
 #include "stdlib.h"
 //#include "conio.h"  //para uso no windows
 #include "time.h"
+//cores para  jogo
+#define RS "\033[0m"
+#define FB "\033[34m"
 
 typedef struct Peca{
 	int E;
