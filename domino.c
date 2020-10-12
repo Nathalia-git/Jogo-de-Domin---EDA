@@ -1,6 +1,6 @@
 #include"domino.h"
 
-int main (){
+int main(){
 	int op=0;
 	
 	printf(     "____________________________________________ \n");
@@ -28,6 +28,7 @@ int main (){
 	return 0;
 }
 
+//imprime uma mensagem para o usuário, agradecendo por jogar
 void acabar(){
 	
 	printf("\n%s%s	+---------------------------------------+%s%s\n",BB,FW,OL,RS);
@@ -36,7 +37,6 @@ void acabar(){
 	printf("%s%s	|                                       |%s%s\n",BB,FW,OL,RS);
 	printf("%s%s	+---------------------------------------+%s%s\n\n",BB,FW,OL,RS);
 }
-//imprime uma mensagem para o usuário, agradecendo por jogar
 
 //Nesta função 28 peças são mandadas para o monte e são distribuidas a quantidade minima de peças para o jogador e o oponente de forma aleatória.
 //Ao começar o jogo verifica-se qual foi o primeiro jogador a jogar, o que definirá a ordem de jogadas do restante do jogo
@@ -97,7 +97,6 @@ void principal_jogo(){
 	getchar();
 	acabar();//funcao para chamar a mensagem "Obrigada por jogar"
 }
-
 //Dá início ao jogo automaticamente. 
 //Percorre as peças do jogador e do oponente a fim de encontrar o maior carretão entre elas, caso não encontre carretões chama a função maior
 void inicio_jogo(Peca **percorre, Peca **corre){
@@ -165,7 +164,6 @@ void inicio_jogo(Peca **percorre, Peca **corre){
 		conta_maior(&jogador, &oponente);
 	}
 }
-
 void apresenta_jogo(){
 	printf("\nMonte: %d\n",contabiliza(monte));
 	para_baixo(monte, 1);
@@ -201,4 +199,3 @@ void apresenta(Peca *percorre, int verifica){
 		}
 		printf("\n");
 }
-
