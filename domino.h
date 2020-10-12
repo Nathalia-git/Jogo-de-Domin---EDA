@@ -19,5 +19,7 @@ struct Peca *oponente = NULL;
 
 void principal_jogo();
 void inicio_jogo (Peca **percorre, Peca **corre);
+void apresenta_jogo();	
+void apresenta(Peca *percorre, int verifica);	
 
 #endif
