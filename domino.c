@@ -29,7 +29,7 @@ int main(){
 }
 
 //imprime uma mensagem para o usuário, agradecendo por jogar
-void acabar()
+void acabar(){
 	
 	printf("\n%s%s	+---------------------------------------+%s%s\n",BB,FW,OL,RS);
 	printf("%s%s	|                                       |%s%s\n",BB,FW,OL,RS);
