@@ -45,7 +45,7 @@ int somatorio(Peca *percorre);
 Peca* coloca_fim(Peca **lst, Peca **colocado);	
 int confere_peca(Peca *ptr, Peca *comeco, Peca *final); 
 void final_jogo();		
-void acabar() 
+void acabar();
 
 
 #endif
