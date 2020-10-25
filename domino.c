@@ -40,7 +40,7 @@ void acabar(){
 
 //Nesta função 28 peças são mandadas para o monte e são distribuidas a quantidade minima de peças para o jogador e o oponente de forma aleatória.
 //Ao começar o jogo verifica-se qual foi o primeiro jogador a jogar, o que definirá a ordem de jogadas do restante do jogo
-//Possíveis resultados para o término do jogo: O oponente ficar sem peça, o jogador ficar sem peças ou não ter mais peças para serem compradas no monte e então é contado o somatório das peças de cada jogador, com a função conta para saber quem ganhou 
+//Possíveis resultados para o término do jogo: O oponente ficar sem peça, o jogador ficar sem peças ou não ter mais peças para serem compradas no monte e então é contado o somatório das peças de cada jogador, com a função somatorio para saber quem ganhou 
 void principal_jogo(){
 
 	Peca *primeiro, *ultimo;
